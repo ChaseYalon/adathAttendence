@@ -27,11 +27,12 @@ class Madrich {
 }
 
 class Class {
-    constructor(teacher, students = [], history = [], madrich = []) {
+    constructor(name,teacher, students = [], history = [], madrich = []) {
         this.teacher = teacher;
         this.students = students;
         this.history = history;
         this.madrich = madrich;
+        this.name=name;
     }
 
     takeAttendance(presentStudents, presentMadrichim) {
